@@ -1,0 +1,16 @@
+/* Buttons */
+%btn-base {
+    font-size: 18px;
+    padding: 10px 22px;
+    color: $white;
+
+    &:hover,
+    &:focus {
+        color: $white;
+    }
+}
+
+
+.btn {
+    @extend %btn-base;
+}

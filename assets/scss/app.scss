@@ -1,0 +1,29 @@
+// Importing Bootstrap 4 Sass
+@import "abstracts/theme_variables";
+//@import "vendor/bootstrap4/bootstrap";  
+@import "vendor/bootstrap5/bootstrap";  
+
+//@import "vendor/fontawesome/font-awesome";    // <-------- Font Awesome Icon font
+@import "vendor/fontawesome5/fontawesome";    // <-------- Font Awesome Icon font
+@import "vendor/fontawesome5/brands";    // <-------- Font Awesome Icon font
+@import "vendor/fontawesome5/solid";    // <-------- Font Awesome Icon font
+@import "vendor/fontawesome5/regular";    // <-------- Font Awesome Icon font
+
+/* Mixins */
+@import "abstracts/mixins/all-mixins";
+@import "abstracts/all";
+
+//Importing all Core files
+@import "core/all";
+
+/* Components */
+@import "components/all";
+
+/* Layout */
+@import "layout/all";
+
+/* Blocks */
+@import "blocks/all";
+
+/* Pages */
+@import "pages/all";

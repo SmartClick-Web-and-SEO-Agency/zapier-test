@@ -1,0 +1,38 @@
+.c-share {
+    display: flex;
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+
+    &__link {
+        color: $white;
+        height: 46px;
+        width: 46px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        text-decoration: none;
+
+        &--facebook {
+            background-color: $facebook;
+        }
+
+        &--twitter {
+            background-color: $twitter;
+        }
+
+        &--linkedin {
+            background-color: $linkedin;
+        }
+
+        &:hover {
+            color: $white;
+            opacity: 0.7;
+        }
+    }
+}

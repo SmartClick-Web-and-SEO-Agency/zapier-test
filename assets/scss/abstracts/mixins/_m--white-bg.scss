@@ -1,0 +1,5 @@
+// Box Shadow
+@mixin white-bg-shadow() {
+	background-color: $white;
+	box-shadow: 0 0.1875rem 0.425rem 0.0125rem rgba(0, 0, 0, 0.08);
+}

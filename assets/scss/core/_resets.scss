@@ -1,0 +1,18 @@
+/* CUSTOM RESETS
+================================================== */
+a, button, .btn {
+	@include vendor-prefixes(transition, all .25s ease-in-out);
+    cursor: pointer;
+    outline: 0 none;
+
+    &:hover,
+	&:focus {
+	    outline: 0 none;
+    	text-decoration: none;
+    	box-shadow: none;
+	}
+}
+
+strong {
+	font-weight: 700;
+}

@@ -1,0 +1,17 @@
+// Flex
+@mixin flex-left ($flexLength, $flexHeight) {
+	-webkit-box-flex: 0;
+    -webkit-flex: 0 0 $flexLength;
+    -ms-flex: 0 0 $flexLength;
+    flex: 0 0 $flexLength;
+    max-width: $flexLength;
+    height: $flexHeight;
+}
+
+@mixin flex-right ($flexLengthR) {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 calc(100% - #{$flexLengthR});
+    -ms-flex: 0 0 calc(100% - #{$flexLengthR});
+    flex: 0 0 calc(100% - #{$flexLengthR});
+    max-width: calc(100% - #{$flexLengthR});
+}

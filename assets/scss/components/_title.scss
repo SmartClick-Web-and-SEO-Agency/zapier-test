@@ -1,0 +1,39 @@
+.c-title {
+    &-has-icon {
+        display: flex;
+        align-items: center;
+
+        .c-icon {
+            font-size: 20px;
+            margin-right: 10px;
+
+            @include media-breakpoint-up(md) {
+                font-size: 25px;
+            }
+
+            @include media-breakpoint-up(lg) {
+                font-size: 30px;
+            }
+        }
+
+        img {
+            max-height: 40px;
+        }
+    }
+
+    .dark-theme & {
+        color: $white;
+    }
+}
+
+.c-subtitle {
+    .dark-theme & {
+        color: $white;
+    }
+}
+
+.c-tagline {
+    .dark-theme & {
+        color: $white;
+    }
+}

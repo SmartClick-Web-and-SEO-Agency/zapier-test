@@ -1,0 +1,22 @@
+//    #CORE
+//------------------------------------
+
+
+// Core files must be included and must come first.
+// They help us to make consistence across browsers, building CSS layouts
+// easier and remove built-in browser styling.
+// Core files are the first files that will be compiled in css.
+
+
+
+
+// CONTENTS
+//
+// CORE
+// Fonts...............Fonts used in the project.
+// Custom Reset...............Custom resets we use for changing some default boostrap styles.
+// Layout...........Code we use for the layout of the page.
+
+@import "fonts";
+@import "layout";
+@import "resets";

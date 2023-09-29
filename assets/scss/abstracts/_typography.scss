@@ -1,0 +1,106 @@
+/**
+ *
+ * Titles
+ *
+ */
+ %title-h1 {
+    @include title-h1-mobile;
+
+    @include media-breakpoint-up(md) {
+        @include title-h1-tablet;
+    }
+  
+    @include media-breakpoint-up(lg) {
+      @include title-h1-desktop;
+    }
+}
+  
+%title-h2 {
+    @include title-h2-mobile;
+
+    @include media-breakpoint-up(md) {
+        @include title-h2-tablet;
+    }
+  
+    @include media-breakpoint-up(lg) {
+      @include title-h2-desktop;
+    }
+}
+  
+%title-h3 {
+    @include title-h3-mobile;
+
+    @include media-breakpoint-up(md) {
+        @include title-h3-tablet;
+    }
+  
+    @include media-breakpoint-up(lg) {
+      @include title-h3-desktop;
+    }
+}
+  
+%title-h4 {
+    @include title-h4-mobile;
+
+    @include media-breakpoint-up(md) {
+        @include title-h4-tablet;
+    }
+  
+    @include media-breakpoint-up(lg) {
+      @include title-h4-desktop;
+    }
+}
+
+%title-h5 {
+    @include title-h5-mobile;
+
+    @include media-breakpoint-up(md) {
+        @include title-h5-tablet;
+    }
+  
+    @include media-breakpoint-up(lg) {
+      @include title-h5-desktop;
+    }
+}
+
+%title-h6 {
+    @include title-h6-mobile;
+
+    @include media-breakpoint-up(md) {
+        @include title-h6-tablet;
+    }
+  
+    @include media-breakpoint-up(lg) {
+      @include title-h6-desktop;
+    }
+}
+  
+h1,
+.h1 {
+    @extend %title-h1;
+}
+  
+h2,
+.h2 {
+    @extend %title-h2;
+}
+
+h3,
+.h3 {
+    @extend %title-h3;
+}
+
+h4,
+.h4 {
+    @extend %title-h4;
+}
+
+h5,
+.h5 {
+    @extend %title-h5;
+}
+
+h6,
+.h6 {
+    @extend %title-h6;
+}

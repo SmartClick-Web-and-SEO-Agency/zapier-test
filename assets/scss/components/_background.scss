@@ -1,0 +1,58 @@
+.c-background {
+    &__color {
+        @include position-fill;
+        pointer-events: none;
+    }
+
+    &__image {
+        @include position-fill;
+        @include background;
+        pointer-events: none;
+
+        &--desktop {
+        @include media-breakpoint-down(md) {
+            display: none;
+        }
+        }
+
+        &--desktop-tablet {
+        @include media-breakpoint-between(md, md) {
+            display: block;
+        }
+        }
+
+        &--desktop-mobile {
+        @include media-breakpoint-down(sm) {
+            display: block;
+        }
+        }
+
+        &--tablet {
+        display: none;
+
+        @include media-breakpoint-between(md, md) {
+            display: block;
+        }
+        }
+
+        &--mobile {
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+        }
+    }
+
+    &--fill {
+        @include position-fill;
+        pointer-events: none;
+    }
+
+    .container {
+        position: relative;
+    }
+}
+  
+%with-background,
+.c-with-background {
+    @include background-support();
+}
